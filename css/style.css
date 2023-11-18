@@ -1,0 +1,479 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Teko', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    height: max-content;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 180px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.headMenu {
+    margin-top: 15px;
+    height: 60px;
+}
+
+.headMenu .img-kiri {
+    width: 130px;
+    margin-left: 10px;
+    float: left;
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.headMenu .img-kanan {
+    width: 130px;
+    margin-right: 10px;
+    float: right;
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+
+.bevCate .img-kanan {
+    width: 130px;
+    margin-left: 20px;
+    float: left;
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.bevCate .img-kiri {
+    width: 130px;
+    margin-right: 20px;
+    float: right;
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.bevCate {
+    margin-top: 15px;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    transform: translateX(-150vw);
+    transition: all .4s ease;
+}
+
+.bevCate.active {
+    transform: translateX(0);
+    position: static;
+}
+
+.subBevNoAlc {
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    transform: translateX(-150vw);
+    transition: all .4s ease;
+    /* border: 1px solid black; */
+}
+
+.subBevNoAlc.active {
+    transform: translateX(0);
+    position: static;
+}
+
+.subBevNoAlc a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.subBevAlc {
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    transform: translateX(-150vw);
+    transition: all .4s ease;
+    /* border: 1px solid black; */
+}
+
+.subBevAlc.active {
+    transform: translateX(0);
+    position: static;
+}
+
+.subBevAlc a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+
+.subFoodMenu {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    transform: translateX(-150vw);
+    transition: all .4s ease;
+    /* border: 1px solid black; */
+}
+
+.subFoodMenu.active {
+    transform: translateX(0);
+    position: static;
+}
+
+.subFoodMenu a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    margin-left: 30px;
+    /* border: 1px solid black; */
+}
+
+
+.listMenu {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu h1 {
+    text-transform: uppercase;
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-top: 5px solid #37c0d5;
+    border-bottom: 5px solid #37c0d5;
+}
+
+.menu h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.menu .tax {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+/* Food Menu */
+
+
+.salads {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+
+.salads.active {
+    opacity: 1;
+    height: auto;
+}
+
+
+.saladsOpen {
+    float: left;
+}
+
+
+.grazing {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+
+.grazing.active {
+    opacity: 1;
+    height: auto;
+}
+
+.grazingOpen {
+    float: left;
+}
+
+.appetizer {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.appetizer.active {
+    opacity: 1;
+    height: auto;
+}
+
+.appetizerOpen {
+    float: left;
+}
+
+.burger {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.burger.active {
+    opacity: 1;
+    height: auto;
+}
+
+.burgerOpen {
+    float: left;
+}
+
+.flair {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.flair.active {
+    opacity: 1;
+    height: auto;
+}
+
+.flairOpen {
+    float: left;
+}
+
+.western {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.western.active {
+    opacity: 1;
+    height: auto;
+}
+
+.westernOpen {
+    float: left;
+}
+
+.pizza {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.pizza.active {
+    opacity: 1;
+    height: auto;
+}
+
+.pasta {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.pasta.active {
+    opacity: 1;
+    height: auto;
+}
+
+.grill {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.grill.active {
+    opacity: 1;
+    height: auto;
+}
+
+
+.grillOpen {
+    float: left;
+}
+
+.sushi {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.sushi.active {
+    opacity: 1;
+    height: auto;
+}
+
+.sushiOpen {
+    float: left;
+}
+
+.dessert {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.dessert.active {
+    opacity: 1;
+    height: auto;
+}
+
+.dessertOpen {
+    float: left;
+}
+
+
+/* Beverage Non Alcohol Menu */
+
+.juice {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.juice.active {
+    opacity: 1;
+    height: auto;
+}
+
+.juiceOpen {
+    float: left;
+}
+
+.coffe {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.coffe.active {
+    opacity: 1;
+    height: auto;
+}
+
+.coffeOpen {
+    float: left;
+}
+
+.tea {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.tea.active {
+    opacity: 1;
+    height: auto;
+}
+
+.teaOpen {
+    float: left;
+}
+
+.soft {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.soft.active {
+    opacity: 1;
+    height: auto;
+}
+
+.softOpen {
+    float: left;
+}
+
+.energy {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.energy.active {
+    opacity: 1;
+    height: auto;
+}
+
+.energyOpen {
+    float: left;
+}
+
+.water {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.water.active {
+    opacity: 1;
+    height: auto;
+}
+
+.waterOpen {
+    float: left;
+}
+
+.mocktail {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.mocktail.active {
+    opacity: 1;
+    height: auto;
+}
+
+.mocktailOpen {
+    float: left;
+}
