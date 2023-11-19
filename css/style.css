@@ -162,13 +162,12 @@
 }
 
 .menu .subs {
-    text-align: center;
-
+  text-align: center;
 }
 
 .menu .subs p {
-    font-style: normal;
-    font-size: 12px;
+  font-style: normal;
+  font-size: 12px;
 }
 
 .menu h3 {
@@ -477,17 +476,33 @@
 /* Beverage Alcohol Menu */
 
 .cocktail {
-    overflow: hidden;
-    height: 0;
-    opacity: 0;
-    transition: opacity 1s ease-out;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 1s ease-out;
 }
 
 .cocktail.active {
-    opacity: 1;
-    height: auto;
+  opacity: 1;
+  height: auto;
 }
 
 .cocktailOpen {
-    float: left;
+  float: left;
+}
+
+.whisky {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.whisky.active {
+  opacity: 1;
+  height: auto;
+}
+
+.whiskyOpen {
+  float: left;
 }

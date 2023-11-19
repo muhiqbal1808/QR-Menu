@@ -42,8 +42,10 @@ const waterOpen = document.querySelector(".waterOpen");
 const water = document.querySelector(".water");
 const mocktailOpen = document.querySelector(".mocktailOpen");
 const mocktail = document.querySelector(".mocktail");
-const cocktailOpen = document.querySelector('.cocktailOpen');
-const cocktail = document.querySelector('.cocktail');
+const cocktailOpen = document.querySelector(".cocktailOpen");
+const cocktail = document.querySelector(".cocktail");
+const whiskyOpen = document.querySelector(".whiskyOpen");
+const whisky = document.querySelector(".whisky");
 
 function hidden1() {
   foodMenu.classList.add("active");
@@ -65,7 +67,8 @@ function hidden1() {
   energy.classList.remove("active");
   water.classList.remove("active");
   mocktail.classList.remove("active");
-  cocktail.classList.remove('active');
+  cocktail.classList.remove("active");
+  whisky.classList.remove("active");
 }
 
 function hidden2() {
@@ -87,7 +90,8 @@ function hidden2() {
   energy.classList.remove("active");
   water.classList.remove("active");
   mocktail.classList.remove("active");
-  cocktail.classList.remove('active');
+  cocktail.classList.remove("active");
+  whisky.classList.remove("active");
 }
 
 foodMenuOpen.addEventListener("click", function (e) {
@@ -246,8 +250,15 @@ mocktailOpen.addEventListener("click", function (e) {
 });
 
 cocktailOpen.addEventListener("click", function (e) {
-    e.preventDefault();
-    hidden2();
-    cocktail.classList.add("active");
-    salads.classList.remove("active");
+  e.preventDefault();
+  hidden2();
+  cocktail.classList.add("active");
+  salads.classList.remove("active");
+});
+
+whiskyOpen.addEventListener("click", function (e) {
+  e.preventDefault();
+  hidden2();
+  whisky.classList.add("active");
+  salads.classList.remove("active");
 });
