@@ -46,6 +46,16 @@ const cocktailOpen = document.querySelector(".cocktailOpen");
 const cocktail = document.querySelector(".cocktail");
 const whiskyOpen = document.querySelector(".whiskyOpen");
 const whisky = document.querySelector(".whisky");
+const beerOpen = document.querySelector(".beerOpen");
+const beer = document.querySelector(".beer");
+const vodkaOpen = document.querySelector(".vodkaOpen");
+const vodka = document.querySelector(".vodka");
+const ginOpen = document.querySelector(".ginOpen");
+const gin = document.querySelector(".gin");
+const rumOpen = document.querySelector(".rumOpen");
+const rum = document.querySelector(".rum");
+const tequilaOpen = document.querySelector(".tequilaOpen");
+const tequila = document.querySelector(".tequila");
 
 function hidden1() {
   foodMenu.classList.add("active");
@@ -69,6 +79,11 @@ function hidden1() {
   mocktail.classList.remove("active");
   cocktail.classList.remove("active");
   whisky.classList.remove("active");
+  beer.classList.remove("active");
+  vodka.classList.remove("active");
+  gin.classList.remove("active");
+  rum.classList.remove("active");
+  tequila.classList.remove("active");
 }
 
 function hidden2() {
@@ -92,6 +107,11 @@ function hidden2() {
   mocktail.classList.remove("active");
   cocktail.classList.remove("active");
   whisky.classList.remove("active");
+  beer.classList.remove("active");
+  vodka.classList.remove("active");
+  gin.classList.remove("active");
+  rum.classList.remove("active");
+  tequila.classList.remove("active");
 }
 
 foodMenuOpen.addEventListener("click", function (e) {
@@ -260,5 +280,40 @@ whiskyOpen.addEventListener("click", function (e) {
   e.preventDefault();
   hidden2();
   whisky.classList.add("active");
+  salads.classList.remove("active");
+});
+
+beerOpen.addEventListener("click", function (e) {
+  e.preventDefault();
+  hidden2();
+  beer.classList.add("active");
+  salads.classList.remove("active");
+});
+
+vodkaOpen.addEventListener("click", function (e) {
+  e.preventDefault();
+  hidden2();
+  vodka.classList.add("active");
+  salads.classList.remove("active");
+});
+
+ginOpen.addEventListener("click", function (e) {
+  e.preventDefault();
+  hidden2();
+  gin.classList.add("active");
+  salads.classList.remove("active");
+});
+
+rumOpen.addEventListener("click", function (e) {
+  e.preventDefault();
+  hidden2();
+  rum.classList.add("active");
+  salads.classList.remove("active");
+});
+
+tequilaOpen.addEventListener("click", function (e) {
+  e.preventDefault();
+  hidden2();
+  tequila.classList.add("active");
   salads.classList.remove("active");
 });

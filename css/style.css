@@ -506,3 +506,83 @@
 .whiskyOpen {
   float: left;
 }
+
+.beer {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.beer.active {
+  opacity: 1;
+  height: auto;
+}
+
+.beerOpen {
+  float: left;
+}
+
+.vodka {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.vodka.active {
+  opacity: 1;
+  height: auto;
+}
+
+.vodkaOpen {
+  float: left;
+}
+
+.gin {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.gin.active {
+  opacity: 1;
+  height: auto;
+}
+
+.ginOpen {
+  float: left;
+}
+
+.rum {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.rum.active {
+  opacity: 1;
+  height: auto;
+}
+
+.rumOpen {
+  float: left;
+}
+
+.tequila {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.tequila.active {
+  opacity: 1;
+  height: auto;
+}
+
+.tequilaOpen {
+  float: left;
+}
